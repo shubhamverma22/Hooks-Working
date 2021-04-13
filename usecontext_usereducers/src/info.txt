@@ -1,0 +1,24 @@
+Context:-
+Context provides a way to pass data through the component tree without having to pass props down manually at every level.
+
+useReducer:-
+It's a hook that is used for state management
+It's an alternative to useState
+it takes 2 argument 1st is reducer function 2nd is the initial State like -- useReducer(reducer, initialState)
+reducer function accepts 2 (state, action)values as an argument and returns a single value (newState)
+
+now we arrange the variable which holds the return value by useReducer So we deStructuring like this:-
+const [count, dispatch] = useReducer(reducer, initialState);
+here count is the variable which holds the return value of reducer and dispatch is the method which call by some event.
+
+dispatch always take action or we can can hold action to perform any action
+ As i mentioned count is the variable which holds the return value of reducer So we have to render this count variable in Dom so we see the changes in our website
+
+
+#When we should take state or action as an object in reducers? --> When we wanr to perform same Task with different Operations
+
+
+Impt:-
+useReducer - Local State management
+Share State between Components- Global State Managament
+useReducer + useContext

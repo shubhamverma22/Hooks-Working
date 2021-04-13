@@ -1,0 +1,13 @@
+ Summary of useState:- 
+ -> With the useState hook, the state doesn't have to be an Object
+ -> The useState hook returns an array with 2 Elements.
+    The first One is the current value of the state, the second Elements is the state setter function
+ -> When dealing with Objects and array, always make sure to use to spread (...) your state variable and then call setter function
+
+ useEffect:- 
+ It is a close replacement of componentDidMount() , componentWillMount(), componentDidUpdate()
+ -> useEffect runs after every render of components
+
+ It run every single time when something is rendered So to avoid it we provide conditioning in useEffect by passing 2nd argument
+ We pass the variable in a array So when this variable gets changed than it renders.
+  
